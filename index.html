@@ -41,7 +41,7 @@ body{
   60% { transform: translate(-3px, 1px) rotate(0deg); }
   70% { 
       transform: translate(3px, 1px) rotate(-1deg); 
-      color: #FF4E50;
+      color: #F5634A;
   }
   80% { transform: translate(-1px, -1px) rotate(1deg); }
   90% { transform: translate(1px, 2px) rotate(0deg); }
@@ -91,33 +91,29 @@ body{
 var init = false;
 $(".question").hide();
 $(".envelope").on("touchstart click", function() {
-    if (init) {
-        //
-    } else {
-        init = true;
-        var today = new Date();
-        /*
-            0 - sunday
-            1 - m
-            2 - t
-            3 - w
-            4 - r
-            5 - f
-            6 - s
-        */
-        if (today.getDay() === 2) {
-            // $("#envelope-icon").addClass("fa-spin");
+    var today = new Date();
+    /*
+        0 - sunday
+        1 - m
+        2 - t
+        3 - w
+        4 - r
+        5 - f
+        6 - s
+    */
+    if (today.getDay() === 3) {
+        if (!init) {
+            init = true;
             $("#envelope-icon").addClass("shake");
             setTimeout(function() {
                 $("#envelope-icon").attr("class", 'fas fa-envelope-open-text');
                 $(".question").show();
                 $(".question").append($("<h1 style='font-size: 80px;'>Will you be my Valentine?!</h1>"));
             }, 5000)
-        } else {
-            $("#exampleModalCenter").modal('toggle')
         }
+    } else {
+        $("#exampleModalCenter").modal('toggle')
     }
-
 });
 </script>
 </body>
