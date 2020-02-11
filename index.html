@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html class="h-100">
 <head>
+<title>Emily fa la la llama 🦙</title>
 <meta charset='utf-8'>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 <style>
+body{
+    /* background-image: url("restaurant_icons.png"); */
+    background-image: url("memphis-colorful.png");
+    background-repeat: repeat;
+    /* font-family: 'Noto Sans', sans-serif; */
+}
 .envelope{
     font-size: 400px;
 }
@@ -46,7 +54,10 @@
 </head>
 <body class="h-100">
 <div class="h-100">
-    <div class="d-flex h-100 justify-content-center align-items-center">
+    <div class="d-flex flex-column h-100 justify-content-center align-items-center">
+        <div class='question'>
+
+        </div>
         <div class="envelope">
             <i class="fas fa-envelope" id="envelope-icon"></i>
         </div>
@@ -78,10 +89,12 @@
 <script src="./public/all.min.js"></script>
 <script>
 var init = false;
+$(".question").hide();
 $(".envelope").on("touchstart click", function() {
     if (init) {
         //
     } else {
+        init = true;
         var today = new Date();
         /*
             0 - sunday
@@ -97,7 +110,8 @@ $(".envelope").on("touchstart click", function() {
             $("#envelope-icon").addClass("shake");
             setTimeout(function() {
                 $("#envelope-icon").attr("class", 'fas fa-envelope-open-text');
-                init = true;
+                $(".question").show();
+                $(".question").append($("<h1>Will you be my Valentine?</h1>"));
             }, 5000)
         } else {
             $("#exampleModalCenter").modal('toggle')
