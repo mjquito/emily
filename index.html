@@ -164,7 +164,7 @@ $(".envelope").on("touchstart click", function() {
         5 - f
         6 - s
     */
-    if (today.getDay() === 3) {
+    if (today.getDay() === 5) {
         if (!init) {
             init = true;
             $(".envelope").removeClass("swing");
@@ -173,10 +173,6 @@ $(".envelope").on("touchstart click", function() {
             setTimeout(function() {
                 $(".envelope").empty();
                 $(".envelope").append($("<i class='fas fa-envelope-open-text' style='color: #FF4E50;'></i>"));
-                // $("#envelope-icon")
-                //     .attr("class", 'fas fa-envelope-open-text')
-                //     .css("color", "#FF4E50");
-                
                 $(".question").show();
                 $(".question").append($("<h1 style='font-size: 80px;'>Will you be my Valentine?!</h1>"));
                 $(".envelope").removeClass("shake");
