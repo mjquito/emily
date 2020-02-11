@@ -67,13 +67,13 @@ body{
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle" style="font-size: 40px;">Sorry!</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle" style="font-size: 40px;">Sorry, Emily!</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size: 25px;">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body" style="font-size: 35px;">
-        You cannot open this until Friday 🦙:)
+        No puedes abrirlo hasta que llegue el viernes 🦙:)
       </div>
       <div class="modal-footer" style="border: none">
         <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal" style="font-size: 25px;">Close</button> -->
@@ -105,7 +105,7 @@ $(".envelope").on("touchstart click", function() {
             5 - f
             6 - s
         */
-        if (today.getDay() === 1) {
+        if (today.getDay() === 2) {
             // $("#envelope-icon").addClass("fa-spin");
             $("#envelope-icon").addClass("shake");
             setTimeout(function() {
