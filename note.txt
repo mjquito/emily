@@ -1,0 +1,7 @@
+setTimeout(function() {
+    $(".envelope").empty();
+    $(".envelope").append($("<i class='fas fa-envelope-open-text' style='color: #FF4E50;'></i>"));
+    $(".question").show();
+    $(".question").append($("<h1 style='font-size: 80px;'>Will you be my Valentine?!</h1>"));
+    $(".envelope").removeClass("shake");
+}, 5000)
