@@ -4,188 +4,37 @@
 <title>Emily! 🦙</title>
 <meta charset='utf-8'>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Damion&display=swap" rel="stylesheet">
 <style>
 body{
     background-image: url("memphis-colorful.png");
+    /* background-image: url("paws-pattern.jpg"); */
+    /* background-image: url("dachshund.png"); */
     background-repeat: repeat;
-    font-family: 'Indie Flower', cursive;
+    /* font-family: 'Indie Flower', cursive; */
+    font-family: 'Damion', cursive;
 }
-.envelope{
-    font-size: 400px;
-}
-
-.shake {
-  /* Start the shake animation and make the animation last for 0.5 seconds */
-  animation: shake 0.5s;
-
-  /* When the animation is finished, start again */
-  animation-iteration-count: infinite;
-}
-
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { 
-      transform: translate(-1px, -2px) rotate(-1deg); 
-  }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { 
-      transform: translate(1px, -1px) rotate(1deg); 
-  }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { 
-      transform: translate(3px, 1px) rotate(-1deg); 
-  }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { 
-      transform: translate(1px, -2px) rotate(-1deg); 
-  }
-}
-
-.swing
-{
-        animation: swing 2s ease;
-        animation-iteration-count: infinite;
-}
-
-@keyframes swing
-{
-    /* 15%
-    {
-        transform: translateX(5px);
-    }
-    30%
-    {
-        transform: translateX(-5px);
-    }
-    50%
-    {
-        transform: translateX(3px);
-    }
-    65%
-    {
-        transform: translateX(-3px);
-    }
-    80%
-    {
-        transform: translateX(2px);
-    }
-    100%
-    {
-        transform: translateX(0);
-    } */
-    0% {
-        transform: translateX(0px);
-    }
-    15%
-    {
-        transform: translateX(8px); 
-    }
-    20%
-    {
-        transform: translateX(-8px); 
-    }
-    25%
-    {
-        transform: translateX(6px); 
-    }
-    30%
-    {
-        transform: translateX(-6px); 
-    }
-    35%
-    {
-        transform: translateX(5px); 
-    }
-    40%
-    {
-        transform: translateX(0px);
-    }
-    100% {
-        transform: translateX(0px);
-
-    }
-}
-
 </style>
 </head>
 <body class="h-100">
 <div class="h-100">
     <div class="d-flex flex-column h-100 justify-content-center align-items-center">
         <div class='question'>
-
-        </div>
-        <div class="envelope swing">
-            <span class='fa-layers fa-fw'>
-                <span class="icon">
-                    <i class='fas fa-envelope'></i>
-                </span>
-                <span class="counter">
-                    <span class='fa-layers-counter' style="background: tomato; font-family: cursive;">1</span>
-                </span>
-            </span>
+            <header class='d-flex flex-column align-items-center text-center' style='font-size: 55px;'>
+                <h1 style='font-size: 100px;'>Otra vez, lo siento por llegar tarde! 😞</h1>
+                <div>I hope atlas can forgive me too 🐕</div>
+            </header>
         </div>
     </div>
 </div>
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle" style="font-size: 50px;">Sorry Emily!</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size: 80px;">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body" style="font-size: 45px;">
-        No puedes abrirlo hasta que llegue el viernes! 🦙:)
-      </div>
-      <div class="modal-footer" style="border: none">
-        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal" style="font-size: 25px;">Close</button> -->
-      </div>
-    </div>
-  </div>
 </div>
-
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="./public/all.min.js"></script>
 <script>
-var init = false;
-$(".question").hide();
-$(".envelope").on("touchstart click", function() {
-    var today = new Date();
-    /*
-        0 - sunday
-        1 - m
-        2 - t
-        3 - w
-        4 - r
-        5 - f
-        6 - s
-    */
-    if (today.getDay() === 5) {
-        if (!init) {
-            init = true;
-            $(".envelope").removeClass("swing");
-            $(".envelope .counter").remove();
-            $(".envelope").addClass("shake");
-            setTimeout(function() {
-                $(".envelope").empty();
-                $(".envelope").append($("<i class='fas fa-envelope-open-text' style='color: #FF4E50;'></i>"));
-                $(".question").show();
-                $(".question").append($("<header class='d-flex flex-column align-items-center text-center' style='font-size: 55px;'><h1 style='font-size: 100px;'>Will you be my Valentine?!</h1><div>Dinner @6.30pm and then latin dancing in Rexburg! 🎵</div></header>"));
-                $(".envelope").removeClass("shake");
-            }, 5000)
-        }
-    } else {
-        $("#exampleModalCenter").modal('toggle')
-    }
-});
 </script>
 </body>
 </body>
